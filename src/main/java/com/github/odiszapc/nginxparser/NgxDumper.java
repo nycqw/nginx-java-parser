@@ -18,12 +18,13 @@ package com.github.odiszapc.nginxparser;
 
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.io.StringWriter;
 
 /**
  * NgxDumper is used to serialize an existing or manually created NgxConfig object
  */
-public class NgxDumper {
+public class NgxDumper implements Serializable {
 
     private NgxConfig config;
     private final static int PAD_SIZE = 2;

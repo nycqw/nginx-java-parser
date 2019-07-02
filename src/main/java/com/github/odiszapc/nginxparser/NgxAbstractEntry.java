@@ -49,6 +49,9 @@ public abstract class NgxAbstractEntry implements NgxEntry {
             builder.append(value).append(" ");
         }
         String s = builder.toString();
+        if (s.equals("")) {
+            return s;
+        }
         return s.substring(0, s.length()-1);
     }
 

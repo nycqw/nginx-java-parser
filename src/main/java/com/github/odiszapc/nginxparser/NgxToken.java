@@ -16,8 +16,13 @@
 
 package com.github.odiszapc.nginxparser;
 
-public class NgxToken {
+import java.io.Serializable;
+
+public class NgxToken implements Serializable {
     private String token;
+
+    public NgxToken() {
+    }
 
     public NgxToken(String token) {
         this.token = token;

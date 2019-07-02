@@ -21,6 +21,12 @@ package com.github.odiszapc.nginxparser;
  * # Bla bla
  */
 public class NgxComment extends NgxAbstractEntry {
+    public NgxComment() {
+    }
+
+    public NgxComment(String... rawValues) {
+        super(rawValues);
+    }
 
     public NgxComment(String comment) {
         getTokens().add(new NgxToken(comment.substring(1)));

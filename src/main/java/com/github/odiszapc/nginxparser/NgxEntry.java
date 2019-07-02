@@ -17,6 +17,8 @@
 package com.github.odiszapc.nginxparser;
 
 
-public interface NgxEntry {
+import java.io.Serializable;
+
+public interface NgxEntry extends Serializable {
 
 }
