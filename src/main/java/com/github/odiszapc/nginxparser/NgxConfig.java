@@ -84,16 +84,6 @@ public class NgxConfig extends NgxBlock {
         return listener.getResult();
     }
 
-    @Override
-    public Collection<NgxToken> getTokens() {
-        throw new IllegalStateException("Not implemented");
-    }
-
-    @Override
-    public void addValue(NgxToken token) {
-        throw new IllegalStateException("Not implemented");
-    }
-
     public String toString() {
         return "Nginx Config (" + getEntries().size() + " entries)";
     }
