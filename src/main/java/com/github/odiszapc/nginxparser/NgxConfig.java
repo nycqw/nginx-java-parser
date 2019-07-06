@@ -41,6 +41,9 @@ public class NgxConfig extends NgxBlock {
     public static final Class<? extends NgxEntry> BLOCK = NgxBlock.class;
     public static final Class<? extends NgxEntry> IF = NgxIfBlock.class;
 
+    private int id;
+    private String ip;
+
     /**
      * Parse an existing config
      *
@@ -88,4 +91,19 @@ public class NgxConfig extends NgxBlock {
         return "Nginx Config (" + getEntries().size() + " entries)";
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
 }
